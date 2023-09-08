@@ -31,16 +31,12 @@ added a clickable icon, a text description and a button that opens a modal with 
 
 The project was implemented using the following technologies and libraries:
 
-![@testing-library/jest-dom](<https://img.shields.io/badge/@testing-library(jest-dom)-5.17.0>)
-![@testing-library/react](https://img.shields.io/badge/@testing-library/react-13.4.0)
-![@testing-library/user-event](<https://img.shields.io/badge/@testing-library(user-event)-13.5.0>)
 ![react](https://img.shields.io/badge/react-18.2.0)
-![react-dom](https://img.shields.io/badge/react-dom-18.2.0)
-![react-scripts](https://img.shields.io/badge/react-scripts-5.0.1)
-![web-vitals](https://img.shields.io/badge/web-vitals-2.1.4)
+![react-dom](https://img.shields.io/badge/react%20dom-18.2.0)
+![react-scripts](https://img.shields.io/badge/react%20scripts-5.0.1)
+![web-vitals](https://img.shields.io/badge/web%20vitals-2.1.4)
 ![typescript](https://img.shields.io/badge/typescript-4.9.5)
 ![sass](https://img.shields.io/badge/sass-1.66.1)
-![@types/node](https://img.shields.io/badge/@types-node-20.5.9)
 
 ## Deploy site information (Netlify)
 
