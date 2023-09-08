@@ -31,17 +31,16 @@ added a clickable icon, a text description and a button that opens a modal with 
 
 The project was implemented using the following technologies and libraries:
 
-![modern-normalize](https://img.shields.io/npm/v/modern-normalize/latest.svg)
-![react](https://img.shields.io/npm/v/react/latest.svg)
-![react-dom](https://img.shields.io/npm/v/react-dom/latest.svg)
-![react-router-dom](https://img.shields.io/npm/v/react-router-dom/latest.svg)
-![react-scripts](https://img.shields.io/npm/v/react-scripts/latest.svg)
-![web-vitals](https://img.shields.io/npm/v/web-vitals/latest.svg)
-![typescript](https://img.shields.io/npm/v/typescript/latest.svg)
-![autoprefixer](https://img.shields.io/npm/v/autoprefixer/latest.svg)
-![@types/node](https://img.shields.io/npm/v/@types/node/latest.svg)
-![@types/react](https://img.shields.io/npm/v/@types/react/latest.svg)
-![@types/react-dom](https://img.shields.io/npm/v/@types/react-dom/latest.svg)
+![@testing-library/jest-dom](https://img.shields.io/npm/v/@testing-library/jest-dom/5.17.0)
+![@testing-library/react](https://img.shields.io/npm/v/@testing-library/react/13.4.0)
+![@testing-library/user-event](https://img.shields.io/npm/v/@testing-library/user-event/13.5.0)
+![react](https://img.shields.io/npm/v/react/18.2.0)
+![react-dom](https://img.shields.io/npm/v/react-dom/18.2.0)
+![react-scripts](https://img.shields.io/npm/v/react-scripts/5.0.1)
+![web-vitals](https://img.shields.io/npm/v/web-vitals/2.1.4)
+![typescript](https://img.shields.io/npm/v/typescript/4.9.5)
+![sass](https://img.shields.io/npm/v/sass/1.66.1)
+![@types/node](https://img.shields.io/npm/v/@types/node/20.5.9)
 
 ## Deploy site information (Netlify)
 
@@ -140,7 +139,7 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## #Learn More
+### Learn More
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
