@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "downlevelIteration": true,
+    "lib": ["dom", "dom.iterable"],
+    "allowJs": true,
+    "strict": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "rootDir": "./src",
+    "declaration": true,
+    "sourceMap": true,
+    "baseUrl": "./src",
+    "paths": {
+      "*": ["*", "src/*"],
+      "@assets/*": ["./assets/*"]
+    }
+  },
+  "include": ["src/**/*.ts", "src/ts/images.tsx"],
+  "exclude": ["node_modules"]
+}

@@ -1,0 +1,12 @@
+@mixin useOnHover {
+  @media (hover: hover) {
+    &:hover {
+      cursor: pointer;
+      user-select: none;
+      transition: background-color var(--time--3) cubic-bezier(0.4, 0, 0.2, 1),
+        color var(--time--2) cubic-bezier(0.4, 0, 0.2, 1),
+        border var(--time--1) cubic-bezier(0.4, 0, 0.2, 1);
+      @content;
+    }
+  }
+}
