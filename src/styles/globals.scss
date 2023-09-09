@@ -186,7 +186,7 @@ img {
   max-height: calc(100vh - 32px);
   padding: 40px 10px 20px;
   border-radius: 8px;
-  overflow: auto;
+  overflow-y: auto;
   color: #161616;
   background-color: var(--color--lavender);
   transform: translate(-50%, -50%);
