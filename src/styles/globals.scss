@@ -46,6 +46,14 @@ a {
 
 button {
   cursor: pointer;
+  border: none;
+  outline: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  background: none;
   color: var(--color--black);
 }
 
@@ -93,9 +101,11 @@ img {
   font-size: 16px;
   @include useOnHover {
     text-shadow: 1px 1px var(--color--lavender);
+    transition: var(--transition--2);
   }
   @include useOnClick {
     text-shadow: 1px 1px var(--color--grey);
+    transition: var(--transition--2);
   }
 }
 
@@ -129,36 +139,45 @@ img {
   gap: 10px;
 }
 
-.svg {
+.hover-transition-opacity {
   @include useOnHover {
     opacity: 0.8;
-  }
-  @include useOnClick {
-    opacity: 0.6;
+    transition: var(--transition--2);
   }
 }
 
+.click-transition-opacity {
+  @include useOnClick {
+    opacity: 0.6;
+    transition: var(--transition--2);
+  }
+}
+
+.svg {
+  @extend .hover-transition-opacity;
+  @extend .click-transition-opacity;
+}
+
 .open-button {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 0;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  background: none;
   gap: 7px;
   @include useOnHover {
-    color: var(--color--dark-slate-blue);
+    p {
+      color: var(--color--dark-slate-blue);
+      transition: var(--transition--1);
+    }
     img {
-      opacity: 0.6;
+      opacity: 0.5;
+      transition: var(--transition--1);
     }
   }
   @include useOnClick {
-    color: var(--color--slate-blue);
+    p {
+      color: var(--color--slate-blue);
+      transition: var(--transition--1);
+    }
     img {
       opacity: 0.3;
+      transition: var(--transition--1);
     }
   }
 }
@@ -187,7 +206,7 @@ img {
   padding: 40px 10px 20px;
   border-radius: 8px;
   overflow-y: auto;
-  color: #161616;
+  color: var(--color--black);
   background-color: var(--color--lavender);
   transform: translate(-50%, -50%);
 }
@@ -201,39 +220,36 @@ img {
   justify-content: space-between;
   width: 97%;
   padding: 0;
-  cursor: pointer;
 }
 
 .button-text {
-  border: none;
-  background-color: inherit;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  -webkit-transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  @extend .hover-transition-opacity;
+  @extend .click-transition-opacity;
+
   @include useOnHover {
     color: var(--color--grey);
+    transition: var(--transition--2);
   }
   @include useOnClick {
     color: var(--color--dark-slate-blue);
+    transition: var(--transition--2);
   }
 }
 
 .button-close {
-  border: none;
-  background-color: inherit;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   fill: var(--color--black);
-  -webkit-transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
   @include useOnHover {
     opacity: 0.5;
+    transition: var(--transition--2);
   }
   @include useOnClick {
     opacity: 0.8;
+    transition: var(--transition--2);
   }
 }
 
 .content-container {
   height: 100%;
-  transition: max-height 0.3s ease-out;
   @include useScreen("tablet-sm") {
     display: flex;
     flex-wrap: wrap;
@@ -259,11 +275,13 @@ img {
   @include useOnHover {
     div img {
       border: 1px solid var(--color--slate-blue);
+      transition: var(--transition--3);
     }
   }
   @include useOnClick {
     div img {
       border: 1px solid var(--color--dark-slate-blue);
+      transition: var(--transition--3);
     }
   }
 }
