@@ -40,9 +40,9 @@ The project was implemented using the following technologies and libraries:
 
 ## Deploy site information (Netlify)
 
-`Site name` - **insta-links**
+`Site name` - **instagram-header-link**
 
-`Deploy status badge` - [![Netlify Status](https://api.netlify.com/api/v1/badges/1e64177f-c9e7-41b4-a7c7-3b3a10954d7e/deploy-status)](https://app.netlify.com/sites/insta-links/deploys)
+`Deploy status badge` - [![Netlify Status](https://api.netlify.com/api/v1/badges/c04ea29c-fe4e-4a2e-bd22-f2e16f79705c/deploy-status)](https://app.netlify.com/sites/instagram-header-link/deploys)
 
 ## Getting Started
 
