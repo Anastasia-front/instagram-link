@@ -1,6 +1,6 @@
 import React from "react";
 import "../styles/index.scss";
-import { ContentList } from "./ContentList";
+import { LinkList } from "./LinkList";
 
 const App = () => {
   return (
@@ -16,7 +16,7 @@ const App = () => {
 
       <h3 className="subsubtitle">Далі посилання:</h3>
       <p className="comment">* всі елементи клікабельні</p>
-      <ContentList />
+      <LinkList />
     </div>
   );
 };

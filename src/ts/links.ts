@@ -13,7 +13,7 @@ export interface LinkItemType {
   textArrow: string;
 }
 
-export const content: LinkItemType[] = [
+export const links: LinkItemType[] = [
   {
     title: "LinkedIn",
     textArrow: "профіль",
