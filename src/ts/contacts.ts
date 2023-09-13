@@ -30,7 +30,7 @@ export const contacts: ContactItemType[] = [
   },
   {
     title: "WhatsApp",
-    href: "https://www.hrefedin.com/in/anastasiia-prysiazhnaia/",
+    href: "https://wa.me/380666080702",
     description: "WhatsApp",
     svgName: "whatsApp",
     svgAlt: "whatsApp-svg",
