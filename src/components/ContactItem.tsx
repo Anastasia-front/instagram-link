@@ -6,7 +6,7 @@ export function ContactItem({ item: { href, svgName, svgAlt, description } }) {
   const svg = require(`../assets/svg/${svgName}.svg`);
 
   return (
-    <li className="item">
+    <li className="item max-width">
       <div className="icon-and-contact">
         <a
           className="svg"
