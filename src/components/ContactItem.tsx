@@ -7,7 +7,7 @@ export function ContactItem({ item: { href, svgName, svgAlt, description } }) {
 
   return (
     <li className="item">
-      <div className="icon-and-text">
+      <div className="icon-and-contact">
         <a
           className="svg"
           href={href}
