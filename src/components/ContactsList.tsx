@@ -9,7 +9,7 @@ export function ContactList() {
   return (
     <ul className="list">
       {contacts.map((item: ContactItemType) => (
-        <ContactItem item={item} key={item.title} />
+        <ContactItem item={item} key={item.name} />
       ))}
     </ul>
   );

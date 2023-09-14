@@ -1,37 +1,38 @@
 export interface ContactItemType {
-  title: string;
+  name: string;
   href: string;
   svgAlt: string;
-  description: string;
   svgName: string;
 }
 
 export const contacts: ContactItemType[] = [
   {
-    title: "Phone",
+    name: "Phone",
     href: "tel:+380666080702",
-    description: "+38 (066) 608-07-02",
     svgName: "phone",
     svgAlt: "phone-svg",
   },
   {
-    title: "Email",
+    name: "E-mail",
     href: "mailto:palitsanastasia3.ap@gmail.com",
-    description: "palitsanastasia3.ap@gmail.com",
     svgName: "email",
     svgAlt: "email-svg",
   },
   {
-    title: "Telegram",
+    name: "Telegram",
     href: "https://t.me/anastasiia_prysiazhnaia",
-    description: "Telegram",
     svgName: "telegram",
     svgAlt: "telegram-svg",
   },
   {
-    title: "WhatsApp",
+    name: "Viber",
+    href: "viber://chat?number=380666080702",
+    svgName: "viber",
+    svgAlt: "viber-svg",
+  },
+  {
+    name: "WhatsApp",
     href: "https://wa.me/380666080702",
-    description: "WhatsApp",
     svgName: "whatsApp",
     svgAlt: "whatsApp-svg",
   },
