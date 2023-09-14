@@ -11,17 +11,17 @@ export function LinkItem({
 
   return (
     <li className="item">
-      <div className="icon-and-text">
+      <div className="block">
         <a
           className="svg"
           href={link}
           target="_blank"
           rel="noopener noreferrer nofollow"
         >
-          <img src={svg} alt={svgAlt} width={30} height={30} />
-        </a>
-        <a href={link} target="_blank" rel="noopener noreferrer nofollow">
-          <p className="description">{description}</p>
+          <div className="icon-and-text">
+            <img src={svg} alt={svgAlt} width={30} height={30} />
+            <p className="description">{description}</p>
+          </div>
         </a>
         <AccordionButton
           buttonText={textArrow}

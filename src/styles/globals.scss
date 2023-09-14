@@ -144,6 +144,13 @@ img {
   max-width: 380px;
 }
 
+.block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
 .icon-and-text {
   display: flex;
   flex-direction: column;
@@ -182,6 +189,7 @@ img {
 
 .open-button {
   gap: 7px;
+  padding-bottom: 10px;
   @include useOnHover {
     p {
       color: var(--color--dark-slate-blue);
