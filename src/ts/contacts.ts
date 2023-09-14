@@ -19,16 +19,16 @@ export const contacts: ContactItemType[] = [
     svgAlt: "email-svg",
   },
   {
-    name: "Telegram",
-    href: "https://t.me/anastasiia_prysiazhnaia",
-    svgName: "telegram",
-    svgAlt: "telegram-svg",
-  },
-  {
     name: "Viber",
     href: "viber://chat?number=380666080702",
     svgName: "viber",
     svgAlt: "viber-svg",
+  },
+  {
+    name: "Telegram",
+    href: "https://t.me/anastasiia_prysiazhnaia",
+    svgName: "telegram",
+    svgAlt: "telegram-svg",
   },
   {
     name: "WhatsApp",
