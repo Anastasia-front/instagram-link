@@ -11,8 +11,8 @@ const App = () => {
         Мене звати Анастасія!
       </h1>
       <h2 className="subtitle">
-        В минулому я хореограф та тренер зі стретчингу, а зараз світчер
-        fullstack developer (react, vite, next, node.js)
+        В минулому я хореограф та тренер зі стретчингу, а зараз - світчер
+        fullstack developer
       </h2>
       <div className="sections">
         <section className="section">
