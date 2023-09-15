@@ -18,8 +18,7 @@ export const links: LinkItemType[] = [
     title: "LinkedIn",
     textArrow: "профіль",
     link: "https://www.linkedin.com/in/anastasiia-prysiazhnaia/",
-    description:
-      "профіль у LinkedIn, де я висвітлюю всі свої роботи в новій області",
+    description: "профіль у LinkedIn, де я активно публікую пости",
     svgName: "linkedin",
     svgAlt: "linkedin-svg",
     screenshots: [
@@ -93,7 +92,7 @@ export const links: LinkItemType[] = [
     textArrow: "аккаунт",
     link: "https://www.instagram.com/cliodance/",
     description:
-      "студія танців, де я викладала 5 років та займалася організаційними заходами",
+      "студія танців, де я викладала 5 років та займалася організаційно-керівними справами",
     svgName: "clio",
     svgAlt: "clio-svg",
     screenshots: [
