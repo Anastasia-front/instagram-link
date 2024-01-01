@@ -14,7 +14,6 @@ body {
   font-family: var(--font-family--primary);
   letter-spacing: var(--letter-spacing--primary);
   background-color: var(--color--white);
-  // background-image: url("../assets/background/background.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -68,6 +67,7 @@ img {
   margin: 0 auto;
   padding: 16px;
   text-align: center;
+
   @include useScreen("mobile-md") {
     max-width: 440px;
     padding: 20px 30px;
@@ -79,11 +79,12 @@ img {
 }
 
 .content {
-  z-index: 10;
+  z-index: 12;
   position: absolute;
-  top: 100px;
+  top: 900px;
   left: 50%;
   transform: translateX(-50%);
+  padding-bottom: 300px;
 }
 
 .title {
@@ -109,6 +110,7 @@ img {
   color: var(--color--black);
   font-weight: 300;
   font-size: 16px;
+
   @include useOnHover {
     text-shadow: 2px 2px var(--color--lavender);
     transition: var(--transition--2);
@@ -281,6 +283,7 @@ img {
 
 .button-close {
   fill: var(--color--black);
+
   @include useOnHover {
     opacity: 0.5;
     transition: var(--transition--2);
@@ -293,6 +296,7 @@ img {
 
 .content-container {
   height: 100%;
+
   @include useScreen("tablet-sm") {
     display: flex;
     flex-wrap: wrap;
@@ -311,10 +315,12 @@ img {
   width: 100%;
   min-width: 270px;
   height: auto;
+
   @include useScreen("tablet-sm") {
     width: 50%;
     padding: 10px;
   }
+
   @include useOnHover {
     div img {
       border: 1px solid var(--color--slate-blue);
@@ -330,7 +336,6 @@ img {
 }
 
 .layer {
-  z-index: -1;
   position: fixed;
   width: 100%;
   height: max-content;
@@ -340,47 +345,129 @@ img {
 }
 
 .mountains,
-.layer {
-  z-index: 11;
-  min-height: 800px;
+.clouds {
+  width: 100%;
+  height: 100%;
 }
 
-.layer-bg {
-  background-image: url("https://assets.codepen.io/721952/cloud1Mask.jpg");
-  background-position: top;
-}
-.layer-1 {
-  background-image: url("https://assets.codepen.io/721952/sky.jpg");
-  background-position: left top;
-}
-.layer-2 {
-  background-image: url("https://assets.codepen.io/721952/mountBg.png");
-}
-.layer-3 {
-  background-image: url("https://assets.codepen.io/721952/cloud2.png");
-  background-position: right top;
-}
-.layer-4 {
-  background-image: url("https://assets.codepen.io/721952/mountFg.png");
-}
-.layer-overlay {
-  background-image: url("https://assets.codepen.io/721952/cloud1.png");
-  background-position: right top;
-}
-.layer-5 {
-  background-image: url("https://assets.codepen.io/721952/mountMg.png");
-  background-position: left top;
-}
-.layer-6 {
-  background-image: url("https://assets.codepen.io/721952/cloud3.png");
-  background-position: right top;
-}
+.mountains {
+  position: fixed;
+  top: 0;
+  width: 100vw;
 
-@media only screen and (max-width: 768px) {
+  p {
+    color: var(--color--white);
+    text-transform: uppercase;
+    font-size: 20px;
+    z-index: 15;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .layer {
+    z-index: 11;
+    min-height: 800px;
+  }
+
   .layer-1 {
-    background-position: 26% bottom;
+    background-image: url("https://assets.codepen.io/721952/sky.jpg");
+    background-position: left top;
+    background-size: cover;
+  }
+  .layer-2 {
+    background-image: url("https://assets.codepen.io/721952/mountBg.png");
+
+    @media screen and (min-width: 1190px) {
+      background: none;
+    }
   }
   .layer-3 {
-    background-position: 35% bottom;
+    background-image: url("https://assets.codepen.io/721952/cloud2.png");
+    top: -50%;
+    background-size: cover;
+  }
+  .layer-4 {
+    background-image: url("https://assets.codepen.io/721952/mountFg.png");
+    background-position: right top;
+  }
+  .layer-overlay {
+    background-image: url("https://assets.codepen.io/721952/cloud1.png");
+  }
+  .layer-5 {
+    background-image: url("https://assets.codepen.io/721952/mountMg.png");
+    background-position: left top;
+  }
+  .layer-6 {
+    background-image: url("https://assets.codepen.io/721952/cloud3.png");
+    background-size: cover;
+  }
+}
+
+.clouds {
+  position: fixed;
+  top: 900px;
+
+  .layer {
+    z-index: 10;
+    min-height: 800px;
+  }
+
+  .layer-1 {
+    background-image: url("https://greensock.com/_img/codepen/clouds.png");
+    top: 180%;
+
+    @include useScreen("mobile-lg") {
+      left: 7%;
+    }
+  }
+  .layer-2 {
+    background-image: url("https://greensock.com/_img/codepen/clouds.png");
+    top: 20%;
+
+    @include useScreen("mobile-lg") {
+      right: -30%;
+    }
+  }
+  .layer-3 {
+    background-image: url("https://greensock.com/_img/codepen/clouds.png");
+    top: 60%;
+
+    @include useScreen("mobile-lg") {
+      left: -40%;
+    }
+  }
+  .layer-4 {
+    background-image: url("https://greensock.com/_img/codepen/clouds.png");
+    top: 90%;
+
+    @include useScreen("mobile-lg") {
+      right: -45%;
+    }
+  }
+  .layer-5 {
+    background-image: url("https://greensock.com/_img/codepen/clouds.png");
+    top: 170%;
+
+    @include useScreen("mobile-lg") {
+      left: -30%;
+    }
+  }
+  .layer-6 {
+    background-image: url("https://greensock.com/_img/codepen/clouds.png");
+    top: 200%;
+
+    @include useScreen("mobile-lg") {
+      right: -30%;
+    }
+  }
+  .layer-7 {
+    background-image: url("https://greensock.com/_img/codepen/clouds.png");
+    top: 270%;
+
+    @include useScreen("mobile-lg") {
+      left: -30%;
+    }
   }
 }
