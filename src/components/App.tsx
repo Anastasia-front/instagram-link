@@ -10,11 +10,11 @@ const App = () => {
       <AnimatedBackground />
       <div className="container content">
         <h1 className="title">
-          Вітаю! <br />
-          Мене звати Анастасія!
+          Вітаю, <br />
+          мене звати Анастасія
         </h1>
         <h2 className="subtitle">
-          В минулому я хореограф та тренер зі стретчингу, а зараз - світчер
+          В минулому я хореограф та тренер зі стретчингу, <br/> а зараз - світчер
           fullstack developer
         </h2>
         <div className="sections">
