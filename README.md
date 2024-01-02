@@ -7,6 +7,7 @@ The purpose of this site is to collect all the necessary links to coordinate peo
 - [Project overview](#project-overview)
 - [Technologies and libraries used](#technologies-and-libraries-used)
 - [Deploy site information (Netlify)](#deploy-site-information-netlify)
+- [Screenshots](#screenshots)
 - [Getting Started](#getting-started)
   - [Install dependencies](#install-dependencies)
   - [Run the application](#run-the-application)
@@ -37,12 +38,22 @@ The project was implemented using the following technologies and libraries:
 ![web-vitals](https://img.shields.io/badge/web%20vitals-2.1.4-blue)
 ![typescript](https://img.shields.io/badge/typescript-4.9.5-blue)
 ![sass](https://img.shields.io/badge/sass-1.66.1-blue)
+![gsap](https://img.shields.io/badge/gsap-3.12.4-blue)
 
 ## Deploy site information (Netlify)
 
 `Site name` - **instagram-header-link**
 
 `Deploy status badge` - [![Netlify Status](https://api.netlify.com/api/v1/badges/c04ea29c-fe4e-4a2e-bd22-f2e16f79705c/deploy-status)](https://app.netlify.com/sites/instagram-header-link/deploys)
+
+## Screenshots
+![cover](./src/assets/screenshots/cover.png)
+![first](./src/assets/screenshots/snippet1.png)
+![second](./src/assets/screenshots/snippet2.png)
+![third](./src/assets/screenshots/snippet3.png)
+![fourth](./src/assets/screenshots/snippet4.png)
+![fifth](./src/assets/screenshots/snippet5.png)
+
 
 ## Getting Started
 
