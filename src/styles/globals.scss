@@ -207,7 +207,7 @@ img {
 
   @include useOnHover {
     p {
-      color: var(--color--dark-slate-blue);
+      color: var(--color--dark-blue);
       transition: var(--transition--1);
     }
     img {
@@ -217,7 +217,7 @@ img {
   }
   @include useOnClick {
     p {
-      color: var(--color--slate-blue);
+      color: var(--color--blue);
       transition: var(--transition--1);
     }
     img {
@@ -246,13 +246,15 @@ img {
   top: 50%;
   left: 50%;
   width: 90vw;
+  border-radius: 3px;
+  border: 1px solid var(--color--dark-blue);
   max-width: 100vw;
   max-height: calc(100vh - 32px);
   padding: 40px 10px 20px;
   border-radius: 8px;
   overflow-y: auto;
-  color: var(--color--black);
-  background-color: var(--color--lavender);
+  color: var(--color--white);
+  background-color: var(--color--blue);
   transform: translate(-50%, -50%);
 }
 
@@ -271,8 +273,10 @@ img {
   @extend .hover-transition-opacity;
   @extend .click-transition-opacity;
 
+  color: var(--color--white);
+
   @include useOnHover {
-    color: var(--color--grey);
+    color: var(--color--dark-blue);
     transition: var(--transition--2);
   }
   @include useOnClick {
@@ -282,7 +286,9 @@ img {
 }
 
 .button-close {
-  fill: var(--color--black);
+  width: 20px;
+  height: 20px;
+
 
   @include useOnHover {
     opacity: 0.5;
@@ -323,7 +329,7 @@ img {
 
   @include useOnHover {
     div img {
-      border: 1px solid var(--color--slate-blue);
+      border: 1px solid var(--color--dark-blue);
       transition: var(--transition--3);
     }
   }
@@ -394,6 +400,7 @@ img {
   }
   .layer-overlay {
     background-image: url("https://assets.codepen.io/721952/cloud1.png");
+    background-size: cover;
   }
   .layer-5 {
     background-image: url("https://assets.codepen.io/721952/mountMg.png");
@@ -412,6 +419,10 @@ img {
   .layer {
     z-index: 10;
     min-height: 800px;
+
+    @include useScreen("desktop-lg") {
+      background-size: contain;
+    }
   }
 
   .layer-1 {
@@ -421,6 +432,9 @@ img {
     @include useScreen("mobile-lg") {
       left: 7%;
     }
+    @include useScreen("desktop-lg") {
+      top: 120%;
+    }
   }
   .layer-2 {
     background-image: url("https://greensock.com/_img/codepen/clouds.png");
@@ -428,6 +442,9 @@ img {
 
     @include useScreen("mobile-lg") {
       right: -30%;
+    }
+    @include useScreen("desktop-lg") {
+      top: 40%;
     }
   }
   .layer-3 {
@@ -445,6 +462,9 @@ img {
     @include useScreen("mobile-lg") {
       right: -45%;
     }
+    @include useScreen("desktop-lg") {
+      top: 80%;
+    }
   }
   .layer-5 {
     background-image: url("https://greensock.com/_img/codepen/clouds.png");
@@ -452,6 +472,9 @@ img {
 
     @include useScreen("mobile-lg") {
       left: -30%;
+    }
+    @include useScreen("desktop-lg") {
+      top: 110%;
     }
   }
   .layer-6 {
