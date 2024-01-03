@@ -39,6 +39,9 @@ The project was implemented using the following technologies and libraries:
 ![typescript](https://img.shields.io/badge/typescript-4.9.5-blue)
 ![sass](https://img.shields.io/badge/sass-1.66.1-blue)
 ![gsap](https://img.shields.io/badge/gsap-3.12.4-blue)
+![i18next](https://img.shields.io/badge/i18next-23.7.15-blue)
+![react-i18next](https://img.shields.io/badge/react%20i18next-14.0.0-blue)
+
 
 ## Deploy site information (Netlify)
 
