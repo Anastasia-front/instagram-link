@@ -1,10 +1,12 @@
 import React from "react";
 
-import "../styles/index.scss";
-import { ContactItemType, contacts } from "../ts/contacts";
+
 
 import { ContactItem } from "./ContactItem";
 
+import { ContactItemType, contacts } from "../ts/contacts";
+
+import "../styles/index.scss";
 export function ContactList() {
   return (
     <ul className="list">

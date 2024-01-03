@@ -1,5 +1,7 @@
 import React, { useEffect } from "react";
 import ReactDOM from "react-dom";
+import { useTranslation } from "react-i18next";
+
 
 import close from "../assets/svg/close.svg";
 import { useScrollLock } from "../hooks/useScrollLock";
@@ -7,6 +9,8 @@ import { useScrollLock } from "../hooks/useScrollLock";
 import "../styles/index.scss";
 
 export function ModalPortal({ isOpen, onClose, closeButtonText, children }) {
+  const { t } = useTranslation();
+
   const { lockScroll, unlockScroll } = useScrollLock();
 
   useEffect(() => {
@@ -45,7 +49,7 @@ export function ModalPortal({ isOpen, onClose, closeButtonText, children }) {
       <div className="modal">
         <div className="buttons-container">
           <button type="button" className="button-text" onClick={onClose}>
-            {`Сховати ${closeButtonText}`}
+            {`${t("close")} ${closeButtonText}`}
           </button>
           <button type="button" className="button-close" onClick={onClose}>
             <img src={close} alt="close button" />

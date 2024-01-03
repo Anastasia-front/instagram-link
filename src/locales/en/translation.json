@@ -1,0 +1,19 @@
+{
+  "title": {
+    "firstPart": "Hello,",
+    "secondPart": "my name is Anastasia"
+  },
+  "subtitle": {
+    "firstPart": "In the past, I was a choreographer and stretching coach,",
+    "secondPart": "and now - a switcher fullstack developer"
+  },
+  "subsubtitle": "Next links:",
+  "comment": "* all elements are clickable",
+  "contact": {
+    "description": "You can contact me in any way convenient for you:",
+    "comment": "* all elements are clickable as well"
+  },
+  "open": "Open",
+  "close": "Close",
+  "scroll":"SCROLL DOWN"
+}

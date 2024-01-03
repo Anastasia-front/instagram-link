@@ -289,7 +289,6 @@ img {
   width: 20px;
   height: 20px;
 
-
   @include useOnHover {
     opacity: 0.5;
     transition: var(--transition--2);
@@ -491,6 +490,60 @@ img {
 
     @include useScreen("mobile-lg") {
       left: -30%;
+    }
+  }
+}
+
+.lang {
+  &-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 100;
+    background: var(--color--dark-blue);
+    border-radius: 30px;
+    padding: 10px;
+
+    .first-item {
+      position: relative;
+      padding-right: 12px;
+
+      &::after {
+        position: absolute;
+        content: "";
+        top: 0;
+        right:  0;
+        height: 100%;
+        width: 1px;
+        background: var(--color--white);
+      }
+    }
+  }
+
+  &-button {
+    z-index: 100;
+    color: var(--color--blue);
+
+    @include useOnHover {
+      color: var(--color--grey);
+      transition: var(--transition--2);
+    }
+    @include useOnClick {
+      color: var(--color--black);
+      transition: var(--transition--2);
+    }
+  }
+}
+
+.text {
+  &-white {
+    color: var(--color--white);
+    &-blue {
+      color: var(--color--dark-blue);
     }
   }
 }

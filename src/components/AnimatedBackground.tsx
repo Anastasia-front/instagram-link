@@ -1,9 +1,13 @@
 import React, { useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
 
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 
+
 export function AnimatedBackground() {
+  const { t } = useTranslation();
+
   const [isTop, setIsTop] = useState(true);
 
   useEffect(() => {
@@ -37,7 +41,7 @@ export function AnimatedBackground() {
   return (
     <div id="bg-parallax">
       <div className="mountains">
-        {isTop && <p>scroll down</p>}
+        {isTop && <p>{t("scroll")}</p>}
         <div className="layer-1 layer parallax" data-speed="1"></div>
         <div className="layer-2 layer parallax" data-speed="1"></div>
         <div className="layer-3 layer parallax" data-speed="0.3"></div>
