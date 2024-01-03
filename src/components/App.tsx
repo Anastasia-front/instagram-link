@@ -46,7 +46,6 @@ const App = () => {
         </h1>
         <h2 className="subtitle">
           {t("subtitle.firstPart")} <br /> {t("subtitle.secondPart")}
-          fullstack developer
         </h2>
         <div className="sections">
           <section className="section">
